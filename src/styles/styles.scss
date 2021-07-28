@@ -1,0 +1,114 @@
+$grayColor: rgb(177, 175, 175);
+$greenColor: rgb(115, 216, 169);
+
+* {
+	box-sizing: border-box;
+}
+
+.funds {
+	h2 {
+		color: $grayColor;
+	}
+	margin: 30px auto;
+	padding: 200px;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	.content {
+		border: 1px solid $grayColor;
+		border-top: none;
+		border-radius: 0px 0px 10px 10px;
+		padding: 10px 50px 50px 50px;
+		width: 500px;
+		display: inline-block;
+		text-align: left;
+	}
+	.bar {
+		margin: 0 auto;
+		height: 20px;
+		width: 500px;
+		background-color: $grayColor;
+		border-radius: 10px 10px 0px 0px;
+		z-index: 1;
+	}
+	#progressed {
+		height: 20px;
+		width: 0%;
+		background-color: $greenColor;
+		border-radius: 10px 0px 0px 0px;
+		z-index: 1;
+	}
+	.submit-wrap {
+		height: 60px;
+		width: 100%;
+		position: relative;
+		margin-top: 40px;
+	}
+	.dollar-sign {
+		position: absolute;
+		left: 1.5em;
+		bottom: 0.01em;
+		font-size: 20px;
+		color: $grayColor;
+	}
+	input {
+		height: 60px;
+		width: 65%;
+		border-radius: 8px 0px 0px 8px;
+		border: 1px solid $grayColor;
+		border-right: none;
+		font-size: 20px;
+		padding-left: 60px;
+		&:focus {
+			outline: none !important;
+			border: 1px solid $greenColor;
+		}
+	}
+	button {
+		height: 60px;
+		width: 35%;
+		background-color: $greenColor;
+		color: white;
+		border: hidden;
+		border-radius: 0px 8px 8px 0px;
+		font-size: 20px;
+		&:hover {
+			background-color: rgb(111, 206, 162);
+			cursor: pointer;
+		}
+	}
+}
+
+p {
+	position: relative;
+	bottom: 8px;
+	left: 6px;
+	color: rgb(111, 206, 162);
+	font-size: 15px;
+	text-align: left;
+	font-weight: bold;
+}
+
+.pointer {
+	display: inline-block;
+	.box {
+		width: 500px;
+		height: 40px;
+		background-color: $greenColor;
+		border-radius: 10px;
+	}
+	h1 {
+		padding-top: 10px;
+		font-size: 15px;
+	}
+	.triangle {
+		width: 0;
+		height: 0;
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-top: 30px solid $greenColor;
+		position: relative;
+		left: 430px;
+		bottom: 10px;
+	}
+}

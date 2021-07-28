@@ -1,0 +1,126 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.funds {
+  margin: 30px auto;
+  padding: 200px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.funds h2 {
+  color: #b1afaf;
+}
+
+.funds .content {
+  border: 1px solid #b1afaf;
+  border-top: none;
+  border-radius: 0px 0px 10px 10px;
+  padding: 10px 50px 50px 50px;
+  width: 500px;
+  display: inline-block;
+  text-align: left;
+}
+
+.funds .bar {
+  margin: 0 auto;
+  height: 20px;
+  width: 500px;
+  background-color: #b1afaf;
+  border-radius: 10px 10px 0px 0px;
+  z-index: 1;
+}
+
+.funds #progressed {
+  height: 20px;
+  width: 0%;
+  background-color: #73d8a9;
+  border-radius: 10px 0px 0px 0px;
+  z-index: 1;
+}
+
+.funds .submit-wrap {
+  height: 60px;
+  width: 100%;
+  position: relative;
+  margin-top: 40px;
+}
+
+.funds .dollar-sign {
+  position: absolute;
+  left: 1.5em;
+  bottom: 0.01em;
+  font-size: 20px;
+  color: #b1afaf;
+}
+
+.funds input {
+  height: 60px;
+  width: 65%;
+  border-radius: 8px 0px 0px 8px;
+  border: 1px solid #b1afaf;
+  border-right: none;
+  font-size: 20px;
+  padding-left: 60px;
+}
+
+.funds input:focus {
+  outline: none !important;
+  border: 1px solid #73d8a9;
+}
+
+.funds button {
+  height: 60px;
+  width: 35%;
+  background-color: #73d8a9;
+  color: white;
+  border: hidden;
+  border-radius: 0px 8px 8px 0px;
+  font-size: 20px;
+}
+
+.funds button:hover {
+  background-color: #6fcea2;
+  cursor: pointer;
+}
+
+p {
+  position: relative;
+  bottom: 8px;
+  left: 6px;
+  color: #6fcea2;
+  font-size: 15px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.pointer {
+  display: inline-block;
+}
+
+.pointer .box {
+  width: 500px;
+  height: 40px;
+  background-color: #73d8a9;
+  border-radius: 10px;
+}
+
+.pointer h1 {
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+.pointer .triangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 30px solid #73d8a9;
+  position: relative;
+  left: 430px;
+  bottom: 10px;
+}
+/*# sourceMappingURL=styles.css.map */
