@@ -6,16 +6,29 @@ $greenColor: rgb(115, 216, 169);
 }
 
 .funds {
-	h2 {
-		color: $grayColor;
-	}
-	margin: 30px auto;
-	padding: 200px;
+	margin: 0 auto;
 	width: 100%;
 	display: inline-block;
 	text-align: center;
+	font-family: "Poppins", sans-serif;
+
+	.background {
+		margin: 50px auto;
+		padding: 100px;
+		width: 800px;
+		justify-content: center;
+		background-color: rgb(185, 233, 211);
+	}
+	h1 {
+		font-weight: 600;
+	}
+	h2 {
+		color: $grayColor;
+		font-weight: 100;
+	}
 	.content {
 		border: 1px solid $grayColor;
+		background-color: white;
 		border-top: none;
 		border-radius: 0px 0px 10px 10px;
 		padding: 10px 50px 50px 50px;
@@ -42,13 +55,13 @@ $greenColor: rgb(115, 216, 169);
 		height: 60px;
 		width: 100%;
 		position: relative;
-		margin-top: 40px;
+		margin: 10px 0px;
+		padding: 25px 0px;
 	}
 	.dollar-sign {
 		position: absolute;
-		left: 1.5em;
-		bottom: 0.01em;
-		font-size: 20px;
+		top: 1px;
+		font-size: 30px;
 		color: $grayColor;
 	}
 	input {
@@ -58,7 +71,7 @@ $greenColor: rgb(115, 216, 169);
 		border: 1px solid $grayColor;
 		border-right: none;
 		font-size: 20px;
-		padding-left: 60px;
+		padding-left: 30px;
 		&:focus {
 			outline: none !important;
 			border: 1px solid $greenColor;
@@ -72,6 +85,7 @@ $greenColor: rgb(115, 216, 169);
 		border: hidden;
 		border-radius: 0px 8px 8px 0px;
 		font-size: 20px;
+
 		&:hover {
 			background-color: rgb(111, 206, 162);
 			cursor: pointer;
@@ -86,7 +100,8 @@ p {
 	color: rgb(111, 206, 162);
 	font-size: 15px;
 	text-align: left;
-	font-weight: bold;
+	font-weight: 600;
+	font-family: "Poppins", sans-serif;
 }
 
 .pointer {
@@ -100,6 +115,9 @@ p {
 	h1 {
 		padding-top: 10px;
 		font-size: 15px;
+		font-family: "Poppins", sans-serif;
+		font-weight: 100;
+		color: rgb(9, 104, 60);
 	}
 	.triangle {
 		width: 0;

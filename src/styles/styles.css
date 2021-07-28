@@ -4,19 +4,35 @@
 }
 
 .funds {
-  margin: 30px auto;
-  padding: 200px;
+  margin: 0 auto;
   width: 100%;
   display: inline-block;
   text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.funds .background {
+  margin: 50px auto;
+  padding: 100px;
+  width: 800px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #b9e9d3;
+}
+
+.funds h1 {
+  font-weight: 600;
 }
 
 .funds h2 {
   color: #b1afaf;
+  font-weight: 100;
 }
 
 .funds .content {
   border: 1px solid #b1afaf;
+  background-color: white;
   border-top: none;
   border-radius: 0px 0px 10px 10px;
   padding: 10px 50px 50px 50px;
@@ -46,14 +62,14 @@
   height: 60px;
   width: 100%;
   position: relative;
-  margin-top: 40px;
+  margin: 10px 0px;
+  padding: 25px 0px;
 }
 
 .funds .dollar-sign {
   position: absolute;
-  left: 1.5em;
-  bottom: 0.01em;
-  font-size: 20px;
+  top: 1px;
+  font-size: 30px;
   color: #b1afaf;
 }
 
@@ -64,7 +80,7 @@
   border: 1px solid #b1afaf;
   border-right: none;
   font-size: 20px;
-  padding-left: 60px;
+  padding-left: 30px;
 }
 
 .funds input:focus {
@@ -94,7 +110,8 @@ p {
   color: #6fcea2;
   font-size: 15px;
   text-align: left;
-  font-weight: bold;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
 }
 
 .pointer {
@@ -111,6 +128,9 @@ p {
 .pointer h1 {
   padding-top: 10px;
   font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  color: #09683c;
 }
 
 .pointer .triangle {

@@ -9,7 +9,7 @@ export const Funds = () => {
 	const [submission, setSubmission] = useState(true);
 
 	const increment = () => {
-		if (amount > 0) {
+		if (amount >= 5) {
 			setCount(count + 1);
 		} else {
 			setSubmission(false);
@@ -19,7 +19,7 @@ export const Funds = () => {
 	};
 
 	const donation = (e) => {
-		if (e > 0) {
+		if (e >= 5) {
 			setAmount(e);
 		}
 	};
@@ -42,37 +42,39 @@ export const Funds = () => {
 	return (
 		<Fragment>
 			<div className="funds">
-				<Pointer moneyLeft={moneyLeft} />
-				<div className="bar">
-					<div
-						id="progressed"
-						style={{
-							borderRadius:
-								moneyLeft <= 0 ? "10px 10px 0px 0px" : "10px 0px 0px 0px",
-						}}
-					></div>
-				</div>
-				<div className="content">
-					<h1>Only four days left to fund this project</h1>
-					{count === 0 && <h2>Be the first to donate!</h2>}
-					{count > 0 && (
-						<h2>
-							Join the <span style={{ color: "black" }}>{count}</span> other
-							{count === 1 ? " donor who has" : " donors who have"} already
-							supported this project
-						</h2>
-					)}
+				<div className="background">
+					<Pointer moneyLeft={moneyLeft} />
+					<div className="bar">
+						<div
+							id="progressed"
+							style={{
+								borderRadius:
+									moneyLeft <= 0 ? "10px 10px 0px 0px" : "10px 0px 0px 0px",
+							}}
+						></div>
+					</div>
+					<div className="content">
+						<h1>Only four days left to fund this project</h1>
+						{count === 0 && <h2>Be the first to donate!</h2>}
+						{count > 0 && (
+							<h2>
+								Join the <span style={{ color: "black" }}>{count}</span> other
+								{count === 1 ? " donor who has" : " donors who have"} already
+								supported this project
+							</h2>
+						)}
 
-					<div className="submit-wrap">
-						<p className="dollar-sign">$</p>
-						<input
-							type="text"
-							id="amount"
-							onChange={(e) => donation(e.target.value)}
-						/>
-						<button onClick={increment}>Give Now</button>
+						<div className="submit-wrap">
+							<p className="dollar-sign">$</p>
+							<input
+								type="text"
+								id="amount"
+								onChange={(e) => donation(e.target.value)}
+							/>
+							<button onClick={increment}>Give Now</button>
 
-						<p>{submission ? "" : "Not a valid input. Please try again."}</p>
+							<p>{submission ? "" : "Not a valid input. Please try again."}</p>
+						</div>
 					</div>
 				</div>
 			</div>
