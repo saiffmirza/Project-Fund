@@ -90,6 +90,9 @@ $greenColor: rgb(115, 216, 169);
 			background-color: rgb(111, 206, 162);
 			cursor: pointer;
 		}
+		&:active {
+			background-color: rgba(111, 206, 162, 0.632);
+		}
 	}
 }
 
